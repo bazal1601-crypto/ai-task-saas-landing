@@ -129,8 +129,10 @@
 /* ---- Floating scattered cards ---- */
 
 .hero__visual {
-  position: relative;
-  height: 420px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
   opacity: 0;
   animation: fadeSlideUp 0.6s ease forwards;
   animation-delay: 0.28s;
@@ -185,9 +187,10 @@
 
 /* Team card */
 .hero__card--team {
-  width: 230px;
-  left: 6%;
-  bottom: 0;
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  width: 100%;
+  transform: rotate(-1deg);
 }
 
 .hero__status-tag {
@@ -233,12 +236,14 @@
 
 /* Project / mini player card */
 .hero__card--project {
-  width: 200px;
-  left: 40%;
-  top: 42%;
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  margin-top: -10px;
   display: flex;
   align-items: center;
   gap: 10px;
+  transform: rotate(1.5deg);
 }
 
 .hero__project-icon {
@@ -258,9 +263,10 @@
 
 /* Flora Group card */
 .hero__card--flora {
-  width: 210px;
-  left: 32%;
-  top: 6%;
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  transform: rotate(-1.5deg);
 }
 
 .hero__mini-avatars {
@@ -301,9 +307,10 @@
 
 /* Filter card */
 .hero__card--filter {
-  width: 210px;
-  right: 2%;
-  top: 0;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 100%;
+  transform: rotate(1deg);
 }
 
 .hero__filter-input {
@@ -350,9 +357,10 @@
 
 /* Today's tasks card */
 .hero__card--tasks {
-  width: 210px;
-  right: 4%;
-  top: 58%;
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
+  transform: rotate(-1deg);
 }
 
 .hero__badge-count {
@@ -406,14 +414,15 @@
   }
 
   .hero__visual {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    grid-template-columns: 1fr;
   }
 
-  .hero__card {
-    position: static;
-    width: 100% !important;
+  .hero__card--flora,
+  .hero__card--project,
+  .hero__card--filter,
+  .hero__card--tasks,
+  .hero__card--team {
+    grid-column: 1;
+    transform: none;
   }
 }
