@@ -1,0 +1,133 @@
+```css
+.testimonials-section {
+  padding: 110px 7%;
+  background: #f8f8f8;
+}
+
+.testimonials-section .section-heading {
+  max-width: 720px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.testimonials-section .section-label {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+.testimonials-section .section-heading h1 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -2px;
+  font-weight: 700;
+  color: #111;
+}
+
+.testimonials-section .section-heading h1 span {
+  color: #111;
+}
+
+.testimonials-section .section-heading p {
+  max-width: 580px;
+  margin: 22px auto 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #777;
+}
+
+.testimonials-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.testimonial-card {
+  min-height: 270px;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.quote-mark {
+  font-size: 42px;
+  line-height: 1;
+  color: #5865f2;
+  margin-bottom: 18px;
+}
+
+.testimonial-quote {
+  margin: 0 0 30px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-avatar {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.testimonial-author h3 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.testimonial-author span {
+  font-size: 12px;
+  color: #888;
+}
+
+@media (max-width: 850px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-section .section-heading h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .testimonials-section {
+    padding: 75px 5%;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-section .section-heading h1 {
+    font-size: 34px;
+  }
+}
+```
