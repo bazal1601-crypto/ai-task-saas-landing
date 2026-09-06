@@ -1,16 +1,81 @@
-# React + Vite
+# AI Task Management SaaS – Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive landing page for an AI-powered task management SaaS product, built with React JS. Design reference: [Behance link](https://www.behance.net/gallery/239880815/AI-Task-Management-SaaS-Website-Landing-Page)
 
-Currently, two official plugins are available:
+## 👥 Team
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Name         | GitHub Username | Section(s) Owned                  |
+|--------------|------------------|------------------------------------|
+| Bazal Ansar  | @bazal1601-crypto | Navbar + Hero                     |
+| Mamoona Waqar | @mamoonawaqar79  | Features + How It Works           |
+| Amna         | @Amna-web01      | Pricing + CTA + Footer            |
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React JS (Vite)
+- CSS / [Tailwind CSS, if you're using it]
+- Git & GitHub for version control
 
-## Expanding the ESLint configuration
+## 📂 Folder Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── Features.jsx
+│   ├── HowItWorks.jsx
+│   ├── Pricing.jsx
+│   └── Footer.jsx
+├── assets/
+├── App.jsx
+└── main.jsx
+```
+
+## 🛠️ Getting Started
+
+1. Clone the repo:
+   ```
+   git clone https://github.com/your-username/ai-task-saas-landing.git
+   ```
+2. Move into the project folder:
+   ```
+   cd ai-task-saas-landing
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Run the dev server:
+   ```
+   npm run dev
+   ```
+5. Open the local URL shown in the terminal (usually `http://localhost:5173`).
+
+## 🌿 Branching & Workflow
+
+- `main` is the protected, always-working branch.
+- Each person works on their own feature branch, e.g. `feature/hero-navbar`.
+- Commit with clear messages (e.g. `Add Hero section with CTA button`).
+- Push your branch and open a Pull Request into `main`.
+- Get at least one teammate to review before merging.
+
+## ✅ Features (Sections)
+
+- [ ] Navbar
+- [ ] Hero Section
+- [ ] Features Section
+- [ ] How It Works
+- [ ] Pricing
+- [ ] Footer
+- [ ] Fully responsive (mobile, tablet, desktop)
+
+## 📌 Assignment Info
+
+Course: [Course name]
+Instructor: [Instructor name]
+Submission date: [Date]
+
+## 📄 License
+
+This project is for academic purposes only.
