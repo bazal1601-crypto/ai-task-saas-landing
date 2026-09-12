@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import "./App.css";
 
@@ -797,6 +798,24 @@ function App() {
       </footer>
 
     </div>
+=======
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Stats from "./components/Stats";
+import Features from "./components/Features";
+import HowItWorks from "./components/HowItWorks";
+import "./App.css";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Stats />
+      <Features />
+      <HowItWorks />
+    </>
+>>>>>>> cc9e22e1abda228c994669c56248dca808baca97
   );
 }
 
