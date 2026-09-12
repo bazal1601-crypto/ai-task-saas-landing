@@ -1,17 +1,13 @@
 import { useState } from "react";
-
+import Features from "./components/Features";
+import HowItWorks from "./components/HowItWorks";
+import Testimonials from "./components/Testimonials";
 import "./App.css";
-
-
-
 const speedFeatures = [
-
   {
 
     icon: "✦",
-
     title: "Start Creating",
-
     text: "Add your clutter. Skillflow empowers you to create intelligent content that keeps your team moving.",
 
   },
@@ -1267,7 +1263,16 @@ function App() {
 
 
 
+{/* OUR FEATURES */}
+<Features />
 
+{/* HOW IT WORKS */}
+<HowItWorks />
+
+{/* TESTIMONIALS */}
+<Testimonials />
+
+{/* FAQ */}
         {/* ================= FAQ ================= */}
 
 
