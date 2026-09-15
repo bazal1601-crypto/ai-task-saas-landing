@@ -59,7 +59,7 @@ export default function Stats() {
   }, []);
 
   return (
-    <section className={`stats ${visible ? "stats--visible" : ""}`} ref={sectionRef} id="stats">
+    <section className={`stats ${visible ? "stats--visible" : ""}`} ref={sectionRef} id="customers">
       <div className="stats__inner">
         {STATS.map((stat, i) => (
           <div

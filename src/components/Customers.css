@@ -1,0 +1,73 @@
+.customers-section {
+  width: 88%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 0;
+  text-align: center;
+  animation: customersReveal 0.9s ease both;
+}
+
+@keyframes customersReveal {
+  from { opacity: 0; transform: translateY(35px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.customers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 45px;
+  text-align: left;
+}
+
+.customer-card {
+  padding: 28px;
+  background: white;
+  border: 1px solid #e5e8ed;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.customer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(30,50,80,.1);
+}
+
+.customer-quote {
+  color: #444;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+.customer-person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.customer-person img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.customer-person div {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-person strong {
+  font-size: 11px;
+}
+
+.customer-person span {
+  font-size: 10px;
+  color: #999;
+}
+
+@media (max-width: 900px) {
+  .customers-grid {
+    grid-template-columns: 1fr;
+  }
+}
